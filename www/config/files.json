@@ -1,0 +1,94 @@
+var jsonFiles = {
+    "images": {
+        "cat": {
+            "url": "cat.png",
+            "width": "222",
+            "height": "114"
+        },
+        "dog1": {
+            "url": "dog1.png",
+            "width": "288",
+            "height": "75"
+        },
+        "dog2": {
+            "url": "dog2.png",
+            "width": "294",
+            "height": "129"
+        },
+        "dog3": {
+            "url": "dog3.png",
+            "width": "384",
+            "height": "120"
+        },
+        "dog4": {
+            "url": "dog4.png",
+            "width": "252",
+            "height": "150"
+        },
+        "cloud1": {
+            "url": "cloud1.png",
+            "width": "300",
+            "height": "90"
+        },
+        "cloud2": {
+            "url": "cloud2.png",
+            "width": "360",
+            "height": "120"
+        },
+        "country": {
+            "url": "country.jpg",
+            "width": "1601",
+            "height": "600"
+        },
+        "country2": {
+            "url": "country2.jpg",
+            "width": "1601",
+            "height": "600"
+        },
+        "country3": {
+            "url": "country3.jpg",
+            "width": "1601",
+            "height": "600",
+        },
+        "country4": {
+            "url": "country4.jpg",
+            "width": "1601",
+            "height": "600",
+        },
+        "country5": {
+            "url": "country5.jpg",
+            "width": "1601",
+            "height": "600",
+        },
+        "coin": {
+            "url": "coin.png",
+            "width": "42",
+            "height": "42"
+        },
+        "milk": {
+            "url": "milk.png",
+            "width": "42",
+            "height": "57"
+        },
+        "logo": {
+            "url": "logo.png",
+            "width": "900",
+            "height": "194"
+        }
+    },
+    "sounds": {
+    	"thud": ["audio/thud.mp3", "audio/thud.ogg","Michel Baradari"],
+    	"street": ["audio/street.mp3", "audio/street.ogg", "Zander Noriega"],
+        "wasteland": ["audio/wasteland.mp3", "audio/wasteland.ogg", "Kris Dudley"],
+        "invasion": ["audio/invasion.mp3", "audio/invasion.ogg", "Kris Dudley"],
+        "wreck": ["audio/wreck.mp3", "audio/wreck.ogg", "Zander Noriega"],
+        "hellfire": ["audio/hellfire.mp3", "audio/hellfire.ogg", "Zander Noriega"],
+        "bark1": ["audio/bark1.mp3", "audio/bark1.ogg", "Paulius Jurgelevičius"],
+        "bark2": ["audio/bark2.mp3", "audio/bark2.ogg", "Paulius Jurgelevičius"],
+        "bark3": ["audio/bark3.mp3", "audio/bark3.ogg", "bart"],
+        "bark4": ["audio/bark4.mp3", "audio/bark4.ogg", "bart"],
+        "pain1": ["audio/pain1.mp3", "audio/pain1.ogg", "Stigler"],
+        "pain2": ["audio/pain2.mp3", "audio/pain2.ogg", "Stigler"],
+        "pain3": ["audio/pain3.mp3", "audio/pain3.ogg", "Stigler"]
+    }
+}

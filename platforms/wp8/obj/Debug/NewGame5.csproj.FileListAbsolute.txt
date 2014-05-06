@@ -1,0 +1,15 @@
+C:\localhost\cordova_test\platforms\wp8\Bin\Debug\ApplicationIcon.png
+C:\localhost\cordova_test\platforms\wp8\Bin\Debug\Background.png
+C:\localhost\cordova_test\platforms\wp8\Bin\Debug\com.newgame5.dll
+C:\localhost\cordova_test\platforms\wp8\Bin\Debug\com.newgame5.pdb
+C:\localhost\cordova_test\platforms\wp8\Bin\Debug\AppManifest.xaml
+C:\localhost\cordova_test\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml
+C:\localhost\cordova_test\platforms\wp8\Bin\Debug\com.newgame5.xap
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\App.g.cs
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\Plugins\org.apache.cordova.dialogs\NotificationBox.g.cs
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\cordovalib\CordovaView.g.cs
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\MainPage.g.cs
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\com.newgame5.g.resources
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\com.newgame5.dll
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\com.newgame5.pdb
+C:\localhost\cordova_test\platforms\wp8\obj\Debug\XapCacheFile.xml

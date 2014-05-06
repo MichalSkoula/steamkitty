@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="css/tinybox.css" type="text/css" />
+        <link rel="stylesheet" href="css/alertify.default.css" type="text/css"/>
+        
+        <script src='lib/fastclick.js'></script>
+        <script src="lib/jquery-2.0.3.min.js"></script>
+        <script src="lib/tinybox.js"></script>
+        <script src="lib/lodash.min.js"></script>
+        <script src="lib/sha256.js"></script>
+        <script src="lib/audio5.js"></script>
+        <script src="lib/math.min.js"></script>
+        <script src="lib/alertify.min.js"></script>
+        <script src="cordova.js"></script>
+        
+        <script src="config/config.json"></script>
+        <script src="js/steamkitty.min.js"></script>
+
+        <title>SteamKitty</title>
+    </head>
+    <body>
+        <div id="container"> 
+            <canvas id="canvas" class="canvas" width="900" height="600"></canvas>
+            <div id="controls" class="canvas"></div>
+            <div id="ad"></div>
+
+            <div id="menu">
+                <button id="btn_start" onclick="_game.start()">start</button>
+                <button id="btn_score" onclick="_game.showScore()">score</button>
+                <button id="btn_options" onclick="_game.showOptions()">options</button>
+                <button id="btn_about" onclick="_game.showAbout()">about</button>
+                <span style="float:right">
+                    <span id="user_info"></span>
+                    <button id="btn_signin" onclick="_game.signInDialog()">sign in</button>
+                    <button id="btn_signup" onclick="_game.signUpDialog()">sign up</button>
+                    <button id="btn_market" onclick="_game.showMarket()">market</button>
+                    <button id="btn_signout" onclick="_game.signOut()">x</button>
+                </span>
+                
+            </div> 
+        </div>
+        <div id="preload_overlay"> </div>
+        <div id="preload">
+            <img src="img/ajax-loader.gif">
+        </div>
+    </body>
+</html>

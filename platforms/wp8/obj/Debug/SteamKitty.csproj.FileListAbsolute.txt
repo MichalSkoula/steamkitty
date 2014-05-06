@@ -1,0 +1,15 @@
+D:\localhost\steamkitty\platforms\wp8\Bin\Debug\ApplicationIcon.png
+D:\localhost\steamkitty\platforms\wp8\Bin\Debug\Background.png
+D:\localhost\steamkitty\platforms\wp8\Bin\Debug\com.cordova.test.dll
+D:\localhost\steamkitty\platforms\wp8\Bin\Debug\com.cordova.test.pdb
+D:\localhost\steamkitty\platforms\wp8\Bin\Debug\AppManifest.xaml
+D:\localhost\steamkitty\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml
+D:\localhost\steamkitty\platforms\wp8\Bin\Debug\com.cordova.test.xap
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\App.g.cs
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\Plugins\org.apache.cordova.dialogs\NotificationBox.g.cs
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\cordovalib\CordovaView.g.cs
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\MainPage.g.cs
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\com.cordova.test.g.resources
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\com.cordova.test.dll
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\com.cordova.test.pdb
+D:\localhost\steamkitty\platforms\wp8\obj\Debug\XapCacheFile.xml

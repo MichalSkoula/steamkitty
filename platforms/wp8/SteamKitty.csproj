@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProductVersion>10.0.20506</ProductVersion>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}</ProjectGuid>
+        <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>com.cordova.test</RootNamespace>
+        <AssemblyName>com.cordova.test</AssemblyName>
+        <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+        <SilverlightVersion>
+        </SilverlightVersion>
+        <TargetFrameworkProfile>
+        </TargetFrameworkProfile>
+        <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+        <SilverlightApplication>true</SilverlightApplication>
+        <SupportedCultures>en-US</SupportedCultures>
+        <XapOutputs>true</XapOutputs>
+        <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+        <XapFilename>com.cordova.test.xap</XapFilename>
+        <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+        <SilverlightAppEntry>com.cordova.test.App</SilverlightAppEntry>
+        <ValidateXaml>true</ValidateXaml>
+        <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+        <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+        <BackgroundAgentType />
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>Bin\Debug</OutputPath>
+        <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;WP8</DefineConstants>
+        <NoStdLib>true</NoStdLib>
+        <NoConfig>true</NoConfig>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>Bin\Release</OutputPath>
+        <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;WP8</DefineConstants>
+        <NoStdLib>true</NoStdLib>
+        <NoConfig>true</NoConfig>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+        <DebugSymbols>true</DebugSymbols>
+        <OutputPath>Bin\x86\Debug</OutputPath>
+        <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+        <NoStdLib>true</NoStdLib>
+        <DebugType>full</DebugType>
+        <PlatformTarget>
+        </PlatformTarget>
+        <ErrorReport>prompt</ErrorReport>
+        <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+        <Optimize>false</Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+        <OutputPath>Bin\x86\Release</OutputPath>
+        <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+        <Optimize>true</Optimize>
+        <NoStdLib>true</NoStdLib>
+        <DebugType>pdbonly</DebugType>
+        <PlatformTarget>
+        </PlatformTarget>
+        <ErrorReport>prompt</ErrorReport>
+        <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+        <DebugSymbols>true</DebugSymbols>
+        <OutputPath>Bin\ARM\Debug</OutputPath>
+        <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+        <NoStdLib>true</NoStdLib>
+        <DebugType>full</DebugType>
+        <PlatformTarget>
+        </PlatformTarget>
+        <ErrorReport>prompt</ErrorReport>
+        <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+        <Prefer32Bit>false</Prefer32Bit>
+        <Optimize>false</Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+        <OutputPath>Bin\ARM\Release</OutputPath>
+        <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+        <Optimize>true</Optimize>
+        <NoStdLib>true</NoStdLib>
+        <DebugType>pdbonly</DebugType>
+        <PlatformTarget>
+        </PlatformTarget>
+        <ErrorReport>prompt</ErrorReport>
+        <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+        <Prefer32Bit>false</Prefer32Bit>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="App.xaml.cs">
+            <DependentUpon>App.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="cordovalib\Commands\BaseCommand.cs" />
+        <Compile Include="cordovalib\JSON\JsonHelper.cs" />
+        <Compile Include="cordovalib\BrowserMouseHelper.cs" />
+        <Compile Include="cordovalib\CommandFactory.cs" />
+        <Compile Include="cordovalib\ConfigHandler.cs" />
+        <Compile Include="cordovalib\ConsoleHelper.cs" />
+        <Compile Include="cordovalib\CordovaCommandCall.cs" />
+        <Compile Include="cordovalib\CordovaView.xaml.cs">
+            <DependentUpon>CordovaView.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="cordovalib\IBrowserDecorator.cs" />
+        <Compile Include="cordovalib\ImageExifHelper.cs" />
+        <Compile Include="cordovalib\MimeTypeMapper.cs" />
+        <Compile Include="cordovalib\NativeExecution.cs" />
+        <Compile Include="cordovalib\OrientationHelper.cs" />
+        <Compile Include="cordovalib\PluginResult.cs" />
+        <Compile Include="cordovalib\ScriptCallback.cs" />
+        <Compile Include="cordovalib\XHRHelper.cs" />
+        <Compile Include="MainPage.xaml.cs">
+            <DependentUpon>MainPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Page Include="Plugins\org.apache.cordova.dialogs\NotificationBox.xaml">
+            <SubType>Designer</SubType>
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+    <ItemGroup>
+        <ApplicationDefinition Include="App.xaml">
+            <SubType>Designer</SubType>
+            <Generator>MSBuild:Compile</Generator>
+        </ApplicationDefinition>
+        <Page Include="cordovalib\CordovaView.xaml">
+            <Generator>MSBuild:Compile</Generator>
+            <SubType>Designer</SubType>
+        </Page>
+        <Page Include="MainPage.xaml">
+            <SubType>Designer</SubType>
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="config.xml">
+            <SubType>Designer</SubType>
+        </Content>
+        <Content Include="Images\appbar.back.rest.png" />
+        <Content Include="Images\appbar.close.rest.png" />
+        <Content Include="Images\appbar.feature.video.rest.png" />
+        <Content Include="Images\appbar.next.rest.png" />
+        <Content Include="Images\appbar.save.rest.png" />
+        <Content Include="Images\appbar.stop.rest.png" />
+        <None Include="cordova\lib\build.js" />
+        <None Include="cordova\lib\clean.js" />
+        <None Include="cordova\lib\deploy.js" />
+        <None Include="cordova\lib\log.js" />
+        <None Include="cordova\lib\target-list.js" />
+        <None Include="cordova\build.bat" />
+        <None Include="cordova\clean.bat" />
+        <None Include="cordova\lib\install-device.bat" />
+        <None Include="cordova\lib\install-emulator.bat" />
+        <None Include="cordova\lib\list-devices.bat" />
+        <None Include="cordova\lib\list-emulator-images.bat" />
+        <None Include="cordova\lib\list-started-emulators.bat" />
+        <None Include="cordova\lib\start-emulator.bat" />
+        <None Include="cordova\log.bat" />
+        <None Include="cordova\run.bat" />
+        <None Include="cordova\version.bat" />
+        <None Include="VERSION" />
+        <None Include="Properties\AppManifest.xml">
+            <SubType>Designer</SubType>
+        </None>
+        <None Include="Properties\WMAppManifest.xml">
+            <SubType>Designer</SubType>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="ApplicationIcon.png">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Background.png">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="SplashScreenImage.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <WCFMetadata Include="Service References\" />
+    </ItemGroup>
+    <ItemGroup>
+        <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+    <ProjectExtensions />
+    <PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup>
+        <PostBuildEvent>
+        </PostBuildEvent>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.vibration\Vibration.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.dialogs\Notification.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.dialogs\NotificationBox.xaml.cs">
+            <DependentUpon>NotificationBox.xaml</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup />
+    <ItemGroup>
+        <Content Include="Plugins\org.apache.cordova.dialogs\notification-beep.wav" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.media\Media.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.media\AudioPlayer.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.device\Device.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.globalization\Globalization.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark1.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark1.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark2.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark2.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark3.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark3.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark4.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\bark4.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\hellfire.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\hellfire.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\invasion.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\invasion.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\main1.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\pain1.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\pain1.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\pain2.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\pain2.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\pain3.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\pain3.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\street.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\street.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\thud.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\thud.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\wasteland.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\wasteland.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\wreck.mp3" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\audio\wreck.ogg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\config\config.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\config.xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\cordova.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\cordova_plugins.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\alertify.default.css" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\images\close - kopie.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\images\close.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\images\preload.gif" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\images\preload.gif_old" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\images\Thumbs.db" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\styles.css" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\styles.less" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\tinybox.css" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\css\tinybox.less" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\fixedsys500c.eot" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\fixedsys500c.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\fixedsys500c.ttf" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\fixedsys500c.woff" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\Kottke Silkscreen License.txt" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\prstartk.eot" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\prstartk.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\prstartk.ttf" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\prstartk.woff" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\renegade_master-webfont.eot" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\renegade_master-webfont.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\renegade_master-webfont.ttf" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\renegade_master-webfont.woff" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\slkscr-webfont.eot" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\slkscr-webfont.svg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\slkscr-webfont.ttf" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\fonts\slkscr-webfont.woff" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\ajax-loader.gif" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\cat.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\cloud1.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\cloud2.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\coin.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\country.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\country2.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\country3.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\country4.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\country5.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog1.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog1_half.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog2.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog2_half.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog3.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog3_half.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog4.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\dog4_half.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\logo.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\milk.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\index.html" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\js\steamkitty.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\alertify.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\audio5.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\audio5js.swf" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\fastclick.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\howler.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\jquery-1.10.2.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\jquery-2.0.3.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\lodash.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\math.min.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\sha256.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\lib\tinybox.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.device\www\device.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.dialogs\www\notification.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.globalization\www\globalization.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.globalization\www\GlobalizationError.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.media\www\Media.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.media\www\MediaError.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\plugins\org.apache.cordova.vibration\www\vibration.js" />
+    </ItemGroup>
+</Project>

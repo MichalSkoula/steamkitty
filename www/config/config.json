@@ -1,0 +1,10 @@
+var _gameConfig = {
+	"url": "http://127.0.0.1/kitty/server/",
+	"device": "wp8",
+	"fps": "25",
+	"speed": "1",
+	"immortalSpeed": "10",
+	"audio": "true",
+	"vibrate": "false",
+	"retro": "true"
+}

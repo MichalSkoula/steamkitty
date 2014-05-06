@@ -1,0 +1,10 @@
+var _gameConfig = {
+	"url": "https://steamkitty.com/",
+	"device": "android",
+	"fps": "25",
+	"speed": "1",
+	"immortalSpeed": "10",
+	"audio": "true",
+	"vibrate": "true",
+	"retro": "true"
+}
