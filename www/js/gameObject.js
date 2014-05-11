@@ -1,3 +1,11 @@
+/*
+Copyright 2004 Michal Škoula
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+*/
+
 /* game prototype */
 
 function gameObject(canvas,context,_images) {
@@ -41,28 +49,6 @@ function gameObject(canvas,context,_images) {
 	}
 
 
-	//ads
-	this.showAd = function() {
-		//ad
-	    if(typeof jsonAds[_gameConfig.device] !== "undefined") {
-		    var myAd = null;
-		    if(this.width > 730)
-		    	myAd = jsonAds[_gameConfig.device].ad720;
-		    else if(this.width > 645)
-		    	myAd = jsonAds[_gameConfig.device].ad640;
-		    else if(this.width > 470)
-		    	myAd = jsonAds[_gameConfig.device].ad468;
-		    else 
-		    	myAd = jsonAds[_gameConfig.device].ad320;
-
-		    $("#ad").css({width:myAd.width,height:myAd.height,top:this.height/1.5,display:"block"});
-		    $("#ad").html(myAd.content);
-		}
-	}
-	this.hideAd = function() {
-		$("#ad").css({"display":"none"});
-	}
-
 	//get mouse position after clicking on canvas - with ratio
 	this.getMousePosition = function(evt) {
 		var rect = this.canvas.getBoundingClientRect();
@@ -72,12 +58,6 @@ function gameObject(canvas,context,_images) {
 			y: parseInt((evt.clientY - rect.top) * ratio)
 		};	
 	}
-
-
-
-
-
-
 
 
 	//SCORE SECTION-------------------------------------------------------------------------------------
@@ -431,7 +411,6 @@ function gameObject(canvas,context,_images) {
 
 	//start the game - RUN FROM the START
 	this.start = function() {
-		this.hideAd();
 	    //create cat
 	    _cat = new catObject(_cat.id,_cat.name,100,70,413,0,_cat.money,_cat.items);
 	    this.clouds = [new cloudObject(), new cloudObject(), new cloudObject()];
@@ -522,7 +501,6 @@ function gameObject(canvas,context,_images) {
 	//draw initial game intro
 	this.drawIntro = function() {
 		_sounds.street.play();
-		this.showAd();
         this.context.drawImage(_images.logo,0,0,rc(900),rc(194));
 	}
 	
@@ -530,7 +508,6 @@ function gameObject(canvas,context,_images) {
 	this.drawGameOver = function() {
 		_sounds.ingame.pause();
 		_sounds.street.play();
-		this.showAd();
 		this.context.clearRect(0,0,this.width,this.height);
 		this.context_back.clearRect(0,0,this.width,this.height);
 		this.drawIntro();
