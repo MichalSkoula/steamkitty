@@ -1,3 +1,5 @@
+My Bachelor Final Project, 2014. Only frontend, backend part is somehow lost...
+
 Kitty
 =========
 
