@@ -1,9 +1,9 @@
-My Bachelor Final Project, 2014. Only frontend, backend part is somehow lost...
+My Bachelor Final Project, 2014. Frontend and backend, DB schema part is somehow lost...
 
 Kitty
 =========
 
-HTML5 multiplatform game. Made with Apache Cordova.
+HTML5 multiplatform game. Made with Apache Cordova & Code Igniter.
 
 Author
 ----
