@@ -1,9 +1,12 @@
-Frontend and backend, DB schema part is somehow lost...
 
-Kitty
+SteamKitty
 =========
 
+(very old game)
+
 HTML5 multiplatform game. Made with Apache Cordova & Code Igniter.
+
+![Steamkitty](https://github.com/MichalSkoula/steamkitty/blob/master/screenshot.jpg)
 
 Author
 ----
